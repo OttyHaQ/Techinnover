@@ -1,3 +1,6 @@
+const Ajv = require('ajv')
+const ajv = new Ajv()
+
 
 
 describe("Booking APIs", () => {
@@ -28,6 +31,75 @@ describe("Booking APIs", () => {
             },
     })
     .then((response) => {
+
+      // Validate schema against response
+
+      const schema = {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "title": "Generated schema for Root",
+        "type": "object",
+        "properties": {
+          "bookingid": {
+            "type": "number"
+          },
+          "booking": {
+            "type": "object",
+            "properties": {
+              "firstname": {
+                "type": "string"
+              },
+              "lastname": {
+                "type": "string"
+              },
+              "totalprice": {
+                "type": "number"
+              },
+              "depositpaid": {
+                "type": "boolean"
+              },
+              "bookingdates": {
+                "type": "object",
+                "properties": {
+                  "checkin": {
+                    "type": "string"
+                  },
+                  "checkout": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "checkin",
+                  "checkout"
+                ]
+              },
+              "additionalneeds": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "firstname",
+              "lastname",
+              "totalprice",
+              "depositpaid",
+              "bookingdates",
+              "additionalneeds"
+            ]
+          }
+        },
+        "required": [
+          "bookingid",
+          "booking"
+        ]
+      };
+       
+      const validate = ajv.compile(schema)
+      const isValid = validate(response.body)
+
+      // Assert that the response is valid according to the schema
+      expect(isValid).to.be.true
+ 
+      // Other assertions for the respnse body
+
       cy.log(response.body.bookingid)
       expect(response.status).to.eq(200);
       expect(response.body.bookingid).to.be.a('number');

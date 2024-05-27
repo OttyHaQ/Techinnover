@@ -20,7 +20,7 @@ Cypress.Commands.add('login', (email, password) => {
 
  });
 
- Cypress.Commands.add('isHomePage', () => { 
+Cypress.Commands.add('isHomePage', () => { 
     cy.fixture('homePage').then((homePage) => {
         cy.get(homePage.featuresItemSection).should('be.visible');
         cy.get(homePage.featuresItemSection).should('have.text', 'Features Items');
@@ -28,7 +28,7 @@ Cypress.Commands.add('login', (email, password) => {
  });
 
 
- Cypress.Commands.add('sortItems', () => { 
+Cypress.Commands.add('sortItems', () => { 
     cy.fixture("homePage").then((homePage) => {
 		cy.get(homePage.featuresItems).then(($products) => {
 			
@@ -47,7 +47,7 @@ Cypress.Commands.add('login', (email, password) => {
 	})
  });
 
- Cypress.Commands.add('navigateToWomenProducts', () => {
+Cypress.Commands.add('navigateToWomenProducts', () => {
     cy.fixture('homePage').then((homePage) => {
 		cy.get(homePage.womenDropdown).scrollIntoView().click();
 		cy.get(homePage.topsLink).click();
