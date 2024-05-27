@@ -3,6 +3,7 @@ This guide provides steps to execute tests for the Cypress Assessment project.
 Prerequisites: 
 • A GitHub account (if forking) 
 • Node.js and npm installed on your machine (check with node -v, and npm -v commands)
+Typescript installed
 
 Steps:
 
@@ -22,6 +23,10 @@ Install Dependencies: Open a terminal window and navigate to your local copy of 
                                     npm install
 
 Update Cypress Configuration (if applicable):
+
+Install ajv for schema validation
+
+                                    npm install ajv
 
 Run Cypress Tests: Once the dependencies are installed, you can run each tests using:
 
