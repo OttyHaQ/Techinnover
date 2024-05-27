@@ -1,0 +1,8 @@
+{
+    "featuresItemSection": "div[class='features_items'] h2[class='title text-center']",
+    "featuresItems": ".productinfo",
+    "womenDropdown": "#accordian > div:nth-child(1) > div.panel-heading > h4 > a",
+    "topsLink": "a[href='/category_products/2']",
+    "category": "#accordian"
+
+}

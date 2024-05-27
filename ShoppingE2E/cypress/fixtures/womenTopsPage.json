@@ -1,0 +1,9 @@
+{
+    "selectGreenDress": "a[href='/product_details/8']",
+    "addToCartBtn": "button[type='button']",
+    "continueBtn": ".btn.btn-success.close-modal.btn-block",
+    "viewCart": "#cartModal > div > div > div.modal-body > p:nth-child(2) > a",
+    "selectWhiteDress": "a[href='/product_details/6']",
+    "womenDropdown": "#accordian > div:nth-child(1) > div.panel-heading > h4 > a",
+    "topsLink": "a[href='/category_products/2']"
+}

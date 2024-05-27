@@ -1,0 +1,6 @@
+{
+    "checkoutBtn": ".btn.btn-default.check_out",
+    "commentField": "textarea[name='message']",
+    "comment": "Order placed."
+   
+}

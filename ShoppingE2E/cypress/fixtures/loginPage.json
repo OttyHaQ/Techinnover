@@ -1,0 +1,7 @@
+{
+  "loginLink": "a[href='/login']",
+  "emailField": "input[data-qa='login-email']",
+  "passwordField": "input[placeholder='Password']",
+  "loginBtn": "button[data-qa='login-button']",
+  "header": "div[class='item active'] span:nth-child(1)"
+}

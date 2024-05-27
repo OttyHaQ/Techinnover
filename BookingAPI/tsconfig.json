@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "Node16",
+      "strict": true,
+      "esModuleInterop": true,
+      "types": ["node", "cypress"]
+    },
+    "include": ["**/*.ts"]
+}
+  

@@ -1,0 +1,10 @@
+{
+    "cardNameField": "input[name='name_on_card']",
+    "cardNumberField": "input[name='card_number']",
+    "cvcField": "input[placeholder='ex. 311']",
+    "mnthField": "input[placeholder='MM']",
+    "yearField": "input[placeholder='YYYY']",
+    "confirmBtn": "#submit",
+    "confirmHeader": "h2[class='title text-center'] b",
+    "confirmMsg": "div[class='col-sm-9 col-sm-offset-1'] p"
+}

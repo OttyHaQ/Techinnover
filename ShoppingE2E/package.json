@@ -1,0 +1,24 @@
+{
+  "name": "techinnover",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "author": "Otobong Akpanudo",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.5",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress": "^13.10.0",
+    "cypress-real-events": "^1.12.0",
+    "typescript": "^5.4.5"
+  },
+  "description": "Techinnover Assessment",
+  "dependencies": {
+    "@babel/plugin-transform-object-rest-spread": "^7.24.6",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "reflect-metadata": "^0.2.2"
+  }
+}
