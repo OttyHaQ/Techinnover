@@ -49,5 +49,6 @@ Viewing Test Results After test execution is completed, Cypress Test Runner will
 NOTES: 
 Used Fixtures for my POM instead of Pages, locators are saved in fixtures folder to minimize the number of imports in the spec files. 
 Created custom commands (helper methods) to reduce the lines of codes in some of the spec files. 
-Saved baseUrl and other sensitive information as an environment variables. 
+Saved baseUrl and other sensitive information as an environment variables.
+The folders are independent of each other.
 
